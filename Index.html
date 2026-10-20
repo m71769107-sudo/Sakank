@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق سكنك (Sakanak) - المنصة الأولى للبحث عن غرف وشركاء سكن في مصر</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Cairo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5', // Indigo
+                        secondary: '#10B981', // Emerald
+                        dark: '#1F2937',
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#4f46e5 0.75px, transparent 0.75px), radial-gradient(#4f46e5 0.75px, #f8fafc 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-dark antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <div class="w-11 h-11 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-md shadow-indigo-200">
+                    س
+                </div>
+                <div>
+                    <span class="text-2xl font-black text-gray-900 tracking-tight">سكنك <span class="text-indigo-600">Sakanak</span></span>
+                    <span class="block text-[10px] text-gray-500 font-semibold tracking-wider">رفيقك الأول للسكن في مصر</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 space-x-reverse text-sm font-semibold text-gray-600">
+                <a href="#features" class="hover:text-indigo-600 transition">مميزات التطبيق</a>
+                <a href="#how-it-works" class="hover:text-indigo-600 transition">كيف يعمل؟</a>
+                <a href="#screenshots" class="hover:text-indigo-600 transition">شاشات التطبيق</a>
+                <a href="#testimonials" class="hover:text-indigo-600 transition">قصص نجاح</a>
+                <a href="#faq" class="hover:text-indigo-600 transition">الأسئلة الشائعة</a>
+            </nav>
+
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <a href="https://sakanak.web.app/" target="_blank" class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 text-sm font-bold text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded-xl transition">
+                    تسجيل الدخول
+                </a>
+                <a href="https://sakanak.web.app/" target="_blank" class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-lg shadow-indigo-200 transition transform hover:-translate-y-0.5">
+                    استكشف الغرف الآن
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern pt-16 pb-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-right">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold">
+                        <span class="flex h-2 w-2 rounded-full bg-indigo-600 animate-pulse"></span>
+                        المنصة الأولى والوحيدة في مصر لشركاء السكن والغرف
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight">
+                        اعثر على <span class="text-indigo-600 underline decoration-indigo-300 decoration-wavy">غرفتك المثالية</span> أو شريك سكنك الموثوق
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 font-medium">
+                        وداعاً لعمولات السماسرة ومخاطر الإعلانات العشوائية. يربطك "سكنك" بطلاب ومحترفين موثوقين ومقيمين تم التحقق من هوياتهم في القاهرة، الجيزة، الإسكندرية، وجميع أنحاء مصر.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="https://sakanak.web.app/" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-2xl shadow-xl shadow-indigo-200 text-center transition flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-compass text-lg"></i>
+                            تصفح الغرف المتاحة
+                        </a>
+                        <a href="https://sakanak.web.app/list-room" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-200 font-bold rounded-2xl text-center transition flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-plus-circle text-indigo-600 text-lg"></i>
+                            اعرض غرفتك مجاناً
+                        </a>
+                    </div>
+
+                    <!-- Trust indicators -->
+                    <div class="pt-6 border-t border-gray-200 grid grid-cols-3 gap-4 text-center lg:text-right">
+                        <div>
+                            <div class="text-2xl font-black text-gray-900">0%</div>
+                            <div class="text-xs text-gray-500 font-semibold">عمولات سماسرة إضافية</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-black text-gray-900">100%</div>
+                            <div class="text-xs text-gray-500 font-semibold">مستخدمون موثقو الهوية</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-black text-gray-900">ذكاء اصطناعي</div>
+                            <div class="text-xs text-gray-500 font-semibold">نظام مطابقة الأطباع</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- App Preview / Mockup Simulation -->
+                <div class="lg:col-span-5 relative">
+                    <div class="absolute -top-10 -right-10 w-72 h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+                    <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+                    
+                    <div class="relative bg-gray-900 rounded-[2.5rem] p-4 shadow-2xl border-4 border-gray-800 max-w-sm mx-auto">
+                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-5 bg-gray-800 rounded-b-xl z-20"></div>
+                        <!-- Mockup Screen Content -->
+                        <div class="bg-white rounded-[2rem] overflow-hidden text-right">
+                            <!-- App Header -->
+                            <div class="bg-indigo-600 p-5 text-white">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-xs font-semibold bg-indigo-500 px-2.5 py-1 rounded-full">القاهرة الجديدة - التجمع 📍</span>
+                                    <i class="fa-regular fa-bell text-sm"></i>
+                                </div>
+                                <h3 class="text-lg font-bold">ابحث عن غرفتك القادمة</h3>
+                            </div>
+                            <!-- Mockup Card Body -->
+                            <div class="p-4 space-y-3">
+                                <div class="bg-gray-50 p-3 rounded-xl border border-gray-100 shadow-sm">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center font-bold text-indigo-600">غرفة</div>
+                                        <div>
+                                            <h4 class="font-bold text-sm text-gray-900">غرفة خاصة في التجمع الخامس</h4>
+                                            <p class="text-xs text-indigo-600 font-semibold">8,500 جنيه / شهرياً</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between text-[11px] text-gray-500 pt-2 border-t border-gray-200">
+                                        <span><i class="fa-solid fa-shield-check text-emerald-500"></i> مستخدم موثق</span>
+                                        <span class="bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded font-bold">متاح فوراً</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-indigo-50/50 p-3 rounded-xl border border-indigo-100 text-center">
+                                    <span class="text-xs font-bold text-indigo-700 block mb-1">🎯 مؤشر توافق الشخصيات والمزاج</span>
+                                    <div class="w-full bg-indigo-200 rounded-full h-2">
+                                        <div class="bg-indigo-600 h-2 rounded-full" style="width: 92%"></div>
+                                    </div>
+                                    <span class="text-[10px] text-gray-500 mt-1 block">متوافق بنسبة 92% مع أسلوب حياتك</span>
+                                </div>
+                            </div>
+                            <!-- App Footer Navigation simulation -->
+                            <div class="bg-gray-50 p-3 border-t border-gray-100 flex justify-around text-gray-400 text-xs">
+                                <span class="text-indigo-600 font-bold"><i class="fa-solid fa-house block text-base mb-0.5"></i>الرئيسية</span>
+                                <span><i class="fa-solid fa-magnifying-glass block text-base mb-0.5"></i>استكشاف</span>
+                                <span><i class="fa-solid fa-comments block text-base mb-0.5"></i>الدردشة</span>
+                                <span><i class="fa-solid fa-user block text-base mb-0.5"></i>حسابي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Deep Dive) -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-indigo-600 font-bold text-sm tracking-wider uppercase bg-indigo-50 px-3.5 py-1.5 rounded-full">لماذا تختار سكنك؟</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mt-3">مميزات مصممة خصيصاً لراحتك وأمانك</h2>
+                <p class="text-gray-600 mt-4 text-lg">منصة "سكنك" تعالج مشاكل الإيجار التقليدي وتوفر حلولاً ذكية وآمنة للجميع.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="w-14 h-14 bg-indigo-600 text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-indigo-200">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">مستخدمون موثقون بالكامل</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        نظام تحقق صارم من الهوية لضمان بيئة سكنية آمنة وموثوقة وخالية من الاحتيال أو الحسابات الوهمية.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="w-14 h-14 bg-emerald-600 text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-emerald-200">
+                        <i class="fa-solid fa-handshake-slash"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">بدون وسطاء أو عمولات</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        تواصل مباشر مع المالك أو شريك السكن المحتمل. لا سمسار، لا عمولات مبالغ فيها، شفافية تامة في الأسعار.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="w-14 h-14 bg-purple-600 text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-purple-200">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">نظام المطابقة الذكية (Vibes)</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        خوارزميات متقدمة تقارن تفضيلاتك اليومية، مواعيد النوم، وعادات الدراسة لضمان العيش مع شريك متوافق تماماً معك.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-blue-200">
+                        <i class="fa-solid fa-venus-mars"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">أمان حسب النوع (Gender-Safe)</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        فلاتر دقيقة تضمن سكن مخصص للفتيات فقط أو الشباب فقط، بما يلبي كافة المعايير الاجتماعية والدينية بأمان كامل.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-indigo-600 font-bold text-sm tracking-wider uppercase bg-indigo-100 px-3.5 py-1.5 rounded-full">طريقة الاستخدام</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mt-3">كيف تجد سكنك أو شريكك في 4 خطوات بسيطة؟</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 relative">
+                    <div class="absolute -top-4 -right-4 w-10 h-10 bg-indigo-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-md">01</div>
+                    <div class="text-indigo-600 text-3xl mb-4 font-black">01.</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">أنشئ حسابك</h3>
+                    <p class="text-gray-600 text-sm">سجل مجانًا بريدك الإلكتروني، وأضف تفضيلاتك السكنية ونمط حياتك لزيادة نسبة المطابقة.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 relative">
+                    <div class="absolute -top-4 -right-4 w-10 h-10 bg-indigo-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-md">02</div>
+                    <div class="text-indigo-600 text-3xl mb-4 font-black">02.</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">تصفح الغرف</h3>
+                    <p class="text-gray-600 text-sm">ابحث بالمنطقة، الميزانية، أو المحافظة (القاهرة، الجيزة، الإسكندرية) واحفظ غرفك المفضلة.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 relative">
+                    <div class="absolute -top-4 -right-4 w-10 h-10 bg-indigo-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-md">03</div>
+                    <div class="text-indigo-600 text-3xl mb-4 font-black">03.</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">احجز معاينة</h3>
+                    <p class="text-gray-600 text-sm">تواصل مباشرة مع المضيف عبر الدردشة الآمنة وحدد موعداً لمعاينة المكان على أرض الواقع.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 relative">
+                    <div class="absolute -top-4 -right-4 w-10 h-10 bg-indigo-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-md">04</div>
+                    <div class="text-indigo-600 text-3xl mb-4 font-black">04.</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">انتقل لسكنك الجديد</h3>
+                    <p class="text-gray-600 text-sm">بعد زيارة المكان والتأكد من كل شيء، استقر في منزلك الجديد وابدأ حياة مريحة مع شريكك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots / Showcase Section -->
+    <section id="screenshots" class="py-20 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-indigo-600 font-bold text-sm tracking-wider uppercase bg-indigo-50 px-3.5 py-1.5 rounded-full">جولة بصرية</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mt-3">شاهد التطبيق من الداخل</h2>
+                <p class="text-gray-600 mt-4 text-lg">تصميم نظيف، واجهات مستخدم سلسة، وسهولة تامة في تصفح العقارات والغرف الدراسية والسكنية.</p>
+            </div>
+
+            <!-- Simulated Gallery / App UI Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Screen Card 1 -->
+                <div class="bg-gray-50 rounded-3xl overflow-hidden border border-gray-200 shadow-lg group hover:-translate-y-2 transition duration-300">
+                    <div class="h-64 bg-gradient-to-br from-indigo-500 to-indigo-700 p-6 flex flex-col justify-between text-white relative">
+                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold">سكن طلاب</div>
+                        <div>
+                            <span class="text-xs uppercase tracking-wider text-indigo-200 font-semibold">القاهرة الكبرى</span>
+                            <h4 class="text-2xl font-black mt-1">سكن جامعي قريب من الجامعات</h4>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md p-3 rounded-xl border border-white/20 text-sm">
+                            شقق مشتركة وغرف مفروشة للطلاب المغتربين والجامعيين بأمان
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h5 class="font-bold text-gray-900 mb-2">فلترة حسب الجامعة والموقع</h5>
+                        <p class="text-gray-600 text-sm">ابحث عن مساكن قريبة من جامعة القاهرة، عين شمس، الجامعة الأمريكية، ومختلف الجامعات بسهولة.</p>
+                    </div>
+                </div>
+
+                <!-- Screen Card 2 -->
+                <div class="bg-gray-50 rounded-3xl overflow-hidden border border-gray-200 shadow-lg group hover:-translate-y-2 transition duration-300">
+                    <div class="h-64 bg-gradient-to-br from-emerald-500 to-emerald-700 p-6 flex flex-col justify-between text-white relative">
+                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold">بنات فقط</div>
+                        <div>
+                            <span class="text-xs uppercase tracking-wider text-emerald-200 font-semibold">خصوصية وأمان تام</span>
+                            <h4 class="text-2xl font-black mt-1">سكن مخصص للطالبات والموظفات</h4>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md p-3 rounded-xl border border-white/20 text-sm">
+                            غرف مخصصة بالكامل للبنات مع بيئة سكنية هادئة ومراقبة وآمنة.
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h5 class="font-bold text-gray-900 mb-2">فلتر الفتيات فقط</h5>
+                        <p class="text-gray-600 text-sm">تصفح دقيق ومضمون يتيح للفتيات إيجاد سكن مشترك ومريح مع زميلات متفقات في نمط الحياة.</p>
+                    </div>
+                </div>
+
+                <!-- Screen Card 3 -->
+                <div class="bg-gray-50 rounded-3xl overflow-hidden border border-gray-200 shadow-lg group hover:-translate-y-2 transition duration-300">
+                    <div class="h-64 bg-gradient-to-br from-purple-500 to-purple-700 p-6 flex flex-col justify-between text-white relative">
+                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold">محادثة آمنة</div>
+                        <div>
+                            <span class="text-xs uppercase tracking-wider text-purple-200 font-semibold">تواصل مباشر</span>
+                            <h4 class="text-2xl font-black mt-1">دردشة فورية ومحمية</h4>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md p-3 rounded-xl border border-white/20 text-sm">
+                            تحدث مع المضيف مباشرة، اتفق على التفاصيل، واحجز المعاينة بثقة وسهولة.
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h5 class="font-bold text-gray-900 mb-2">شات داخلي مشفر</h5>
+                        <p class="text-gray-600 text-sm">لا داعي لمشاركة رقم هاتفك الشخصي في البداية؛ تواصل عبر النظام المحمي حتى تقرر الاستئجار.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-indigo-600 font-bold text-sm tracking-wider uppercase bg-indigo-100 px-3.5 py-1.5 rounded-full">قصص نجاح</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mt-3">ماذا يقول مستخدمو "سكنك"؟</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            "كنت دايماً بعاني وأنا بدور على شريك سكن مناسب لشغلي ولطريقتي، عن طريق سكنك لقيت شريك محترم وموثق هويته وفي خلال أيام استقرينا تماماً بدون أي سمسار."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+                        <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center font-bold text-indigo-600">ك.د</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-gray-900">كريم درويش</h4>
+                            <span class="text-xs text-gray-500">مقيم في القاهرة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            "كمطالبة مغتربة، كان أهم حاجة عندي الأمان وسكن بنات فقط قريب من الجامعة. المنصة وفرت عليّ وقت رهيب ولقيت غرفة ممتازة في التجمع."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+                        <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center font-bold text-emerald-600">ت.ج</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-gray-900">نورهان أحمد</h4>
+                            <span class="text-xs text-gray-500">طالبة جامعية</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            "عندي غرف فاضية في شقتي وحبيت أأجرها لشخص محترم ومضمون. نظام التوثيق في سكنك أعطاني طمأنينة كاملة والتعامل كان في غاية السهولة."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+                        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center font-bold text-purple-600">م.أ</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-gray-900">محمود علي</h4>
+                            <span class="text-xs text-gray-500">مضيف عقاري</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-indigo-600 font-bold text-sm tracking-wider uppercase bg-indigo-50 px-3.5 py-1.5 rounded-full">الأسئلة الشائعة</span>
+                <h2 class="text-3xl font-black text-gray-900 mt-3">كل ما تريد معرفته عن تطبيق سكنك</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Question 1 -->
+                <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-3">
+                        <i class="fa-solid fa-circle-question text-indigo-600"></i>
+                        هل توجد أي رسوم أو عمولات سمسرة على الإيجار؟
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed pr-7">
+                        التطبيق مجاني تماماً خلال فترة التشغيل الحالية! لا توجد أي عمولات سمسرة مخفية، فقط تواصل مباشر وآمن مع المالك أو شريك السكن.
+                    </p>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-3">
+                        <i class="fa-solid fa-circle-question text-indigo-600"></i>
+                        كيف يتم التحقق من هوية المستخدمين لضمان الأمان؟
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed pr-7">
+                        نطلب من جميع المستخدمين استكمال ملفاتهم الشخصية وتأكيد البريد الإلكتروني ورقم الهاتف، والحسابات الموثقة تحصل على نقاط مطابقة إضافية وأولوية في الظهور.
+                    </p>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2 flex items-center gap-3">
+                        <i class="fa-solid fa-circle-question text-indigo-600"></i>
+                        هل يوجد سكن مخصص للطالبات والفتيات فقط؟
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed pr-7">
+                        نعم، يتيح التطبيق فلاتر دقيقة تخصص الغرف والشقق لتكون للبنات فقط أو للشباب فقط، بما يضمن بيئة سكنية مريحة ومتوافقة للجميع.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="py-20 bg-indigo-600 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl sm:text-5xl font-black mb-6 leading-tight">جاهز لإيجاد غرفتك أو شريك سكنك المثالي؟</h2>
+            <p class="text-indigo-100 text-lg mb-8 max-w-2xl mx-auto font-medium">
+                انضم الآن لأسرع منصة نمواً في مصر وابدأ رحلة البحث بكل أمان وراحة ودون أي وسيط.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://sakanak.web.app/" target="_blank" class="px-8 py-4 bg-white text-indigo-600 font-bold rounded-2xl shadow-xl hover:bg-gray-100 transition text-center">
+                    ابدأ الاستكشاف مجاناً
+                </a>
+                <a href="https://sakanak.web.app/list-room" target="_blank" class="px-8 py-4 bg-indigo-700 hover:bg-indigo-800 text-white border border-indigo-500 font-bold rounded-2xl transition text-center">
+                    اعرض غرفتك الآن
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-right">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-black text-xl">
+                    س
+                </div>
+                <span class="text-xl font-bold text-white tracking-tight">سكنك <span class="text-indigo-500">Sakanak</span></span>
+            </div>
+            <p class="text-sm">
+                جميع الحقوق محفوظة لموقع وتطبيق سكنك © 2026. المنصة الأولى لشركاء السكن في مصر.
+            </p>
+            <div class="flex space-x-4 space-x-reverse text-lg">
+                <a href="https://sakanak.web.app/" target="_blank" class="hover:text-white transition"><i class="fa-solid fa-globe"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
